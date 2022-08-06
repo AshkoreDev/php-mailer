@@ -35,6 +35,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Contacto</title>
+
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -58,29 +60,29 @@
 
 		<form action="./" method="POST">
 			
-			<h2>¡Contactanos!</h2>
+			<h2>¡Contáctanos!</h2>
 
-			<div>
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name">
+			<div class="form__items">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" autocomplete="off">
 			</div>
 
-			<div>
-        <label for="email">Correo</label>
-        <input type="email" id="email" name="email">
+			<div class="form__items">
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" autocomplete="off">
 			</div>
 
-			<div>
-        <label for="subject">Asunto</label>
-        <input type="text" id="subject" name="subject">
+			<div class="form__items">
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" autocomplete="off">
 			</div>
 
-			<div>
-        <label for="message">Mensaje</label>
+			<div class="form__items">
+        <label for="message">Mensaje:</label>
         <textarea name="message" id="message"></textarea>
 			</div>
 
-			<div>
+			<div class="form__button">
 				<input type="submit" name="form" value="Enviar">
 			</div>
 
