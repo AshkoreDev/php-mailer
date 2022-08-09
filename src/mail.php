@@ -1,10 +1,8 @@
 <?php
 
-require("./vendor/autoload.php");
+require "./vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
 function sendMail($subject, $body, $email, $name, $html = false) {
 
@@ -24,7 +22,7 @@ function sendMail($subject, $body, $email, $name, $html = false) {
   // Definir el contenido del correo.
   $phpmailer->isHTML($html);                                  
   $phpmailer->Subject = $subject;
-  $phpmailer->Body    = $body;
+  $phpmailer->Body = $body;
 
   // Enviar el correo.
   $phpmailer->send();
