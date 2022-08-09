@@ -1,5 +1,7 @@
 <?php 
 	
+	require("./mail.php");
+	
 	function validate($name, $email, $subject, $message, $form) {
 		
 		return !empty($name) && !empty($email) && !empty($subject) && !empty($message);
