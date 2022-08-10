@@ -12,6 +12,7 @@ function sendMail($subject, $body, $email, $name, $html = false) {
 	$phpmailer->Host = 'smtp.gmail.com';
 	$phpmailer->SMTPAuth = true;
 	$phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+	$phpmailer->CharSet = PHPMailer::CHARSET_UTF8;
 	$phpmailer->Port = 465;
 	$phpmailer->Username = ''; // Correo
 	$phpmailer->Password = '016113037783b1'; // Contraseña generada en Gmail.
